@@ -1,0 +1,31 @@
+.Nav {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 1%;
+    padding: .5%;
+    align-items: center;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.Nav > img {
+    /* border-radius: 10px; */
+    width: 10%;
+    padding-left: 1%;
+    width: 4%;
+}
+.Nav > .home > h3 {
+    padding-left: 1%;
+    width: 25%;
+    color: black;
+    /* background-color: red; */
+}
+.Nav > .about > h6 {
+    padding-left: 15%;
+    /* background-color: gray; */
+}
+.Nav > div {
+    /* flex: 1 1 auto; */
+    align-self: center;
+    width: 70%;
+}

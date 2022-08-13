@@ -1,0 +1,99 @@
+@keyframes iniciar {
+
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes imagen {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+/*Estructura General*/
+.BigCard {
+    animation: iniciar 0.3s linear;
+    min-width: 60%;
+    margin: 2%;
+    background-color: rgba(147, 185, 197, 0.3);
+    /* width: 20%; */
+    /* border-top: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:inset 2px 2px 20px 1px rgba(255, 255, 255, .3), 0 4px 30px rgba(0, 0, 0, 0.3);
+    cursor:default;
+    transition: all 0.2s ease;
+    
+}
+
+/*Parte de arriba*/
+.top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* display: flex; */
+    background-color: rgba(147, 185, 197, 0.1);
+    border-radius: 10px;
+}
+
+/*Titulo y subtitulo*/
+.top > h3 {
+    padding-top: 1%;
+}
+
+/* Parte de Abajo */
+.bot {
+    border-radius: 10%;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+/* DatosPanelIzquierda */
+.datosIzq {
+    /* background-color: rgba(255, 0, 0, 0.349); */
+    /* border-radius: 10%; */
+    width: 50%;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    border-right: 1px solid rgb(255, 255, 255, 0.2);
+}
+.datosIzq > hr {
+    margin-top: 0%;
+    /* border: 1px solid rgb(255, 255, 255, 0.2); */
+}
+
+/* DatosPanelDerecha */
+.datosDer {
+    /* background-color: rgba(128, 128, 128, 0.479); */
+    /* border-radius: 10%; */
+    width: 50%;
+    padding-bottom: 5%;
+    border-left: 1px solid rgb(255, 255, 255, 0.2);
+}
+.datosDer > img {
+    width: 60%;
+    animation: imagen 5s infinite;
+}
+.datosDer > hr {
+    margin-top: 0%;
+    /* border: 1px solid rgb(255, 255, 255, 0.2); */
+}
+.datosDer > p {
+    font-weight: 600;
+    font-size:larger;
+}
+span.min {
+    font-weight: 600;
+    color: rgb(0, 0, 255);
+}
+span.max {
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+}

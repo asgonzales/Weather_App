@@ -1,0 +1,6 @@
+.Cartas {
+    /* background-color: blue; */
+    /* cursor: pointer; */
+    display: flex;
+    flex-wrap: wrap;
+}
