@@ -31,7 +31,7 @@ export default function BigCard({datos}){
                         <hr></hr>
                     </div>
                     <div className={styles.datosDer}>
-                        <img src={`http://openweathermap.org/img/wn/${datos.img}@2x.png`} alt={'img'} />
+                        <img src={`https://openweathermap.org/img/wn/${datos.img}@2x.png`} alt={'img'} />
                         <hr></hr>
                         <p>{datos.temp}°</p>
                         <hr></hr>
